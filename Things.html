@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Things</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts/main.js"></script>
+</head>
+
+<body class="center">
+ <header >
+    <nav>
+    <ul class="topnav">
+        <li><a href="main.html"><img src="homeIcon1.png" width=20px hight=17px></a></li>
+		<li><a href="Faces.html">Faces</a></li>
+        <li><a href="Places.html">Places</a></li>
+        <li><a class="activeMenu" href="Things.html">Things</a></li>
+    </ul>
+	</nav>
+ </header>
+
+  <h3>Black and White Challange - Jan 9</h3>
+<div class="row">
+ <!-- Images used to open the lightbox -->
+<div class="column gallery">
+     <img src="Things/B&W Challange Jan9/1-thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+</div>
+
+<div class="column gallery">
+     <img src="Things/B&W Challange Jan9/2-thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+</div>
+
+<div class="column gallery">
+     <img src="Things/B&W Challange Jan9/3-thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+</div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+  
+	<div class="bigPicContainer">
+		<div class="mySlides">
+		  <div class="numbertext">1 / 3</div>
+		  <img class="bigImg" src="Things/B&W Challange Jan9/1.jpg" >
+		</div>
+
+		<div class="mySlides">
+		  <div class="numbertext">2 / 3</div>
+		  <img class="bigImg" src="Things/B&W Challange Jan9/2.jpg" >
+		</div>
+
+		<div class="mySlides">
+		  <div class="numbertext">3 / 3</div>
+		  <img class="bigImg" src="Things/B&W Challange Jan9/3.jpg" >
+		</div>
+		
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<!-- Caption text -->
+		<div class="caption-container">
+		  <p id="caption"></p>
+		</div>
+	</div>
+
+	 <!-- Thumbnail image controls -->   
+	
+	<div class="thumb">
+      <img class="demo" src="Things/B&W Challange Jan9/1-thumb.jpg" onclick="currentSlide(1)" >
+    </div>
+
+    <div class="thumb">
+      <img class="demo" src="Things/B&W Challange Jan9/2-thumb.jpg" onclick="currentSlide(2)" >
+    </div>
+	
+    <div class="thumb">
+      <img class="demo" src="Things/B&W Challange Jan9/3-thumb.jpg" onclick="currentSlide(3)" >
+    </div>
+ </div>
+</div>
+ 
+ 
+<footer>
+<ul class="footer center">
+<li>Made by or something</li>
+    </ul></footer>
+</body>
+
+</html>
